@@ -31,7 +31,7 @@ namespace InfrastructureLayer.Impletations
             if (login == null)
                 return null;
 
-            // Map Login to Student (example mapping)
+           
             return new Student
             {
                 Id = login.Id, 
