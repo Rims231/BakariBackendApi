@@ -9,9 +9,9 @@ namespace WebApi.Controllers
     [ApiController]
     public class PaymentController : ControllerBase
     {
-        private readonly PaymentCo _context; // Change to PaymentContext
+        private readonly PaymentCo _context; 
 
-        public PaymentController(Payment context) // Change to PaymentContext
+        public PaymentController(Payment context) 
         {
             _context = context;
         }
@@ -23,7 +23,7 @@ namespace WebApi.Controllers
             {
                 return NotFound();
             }
-            return await _context.Payments.ToListAsync(); // Access Payments DbSet
+            return await _context.Payments.ToListAsync(); 
         }
     }
     }
